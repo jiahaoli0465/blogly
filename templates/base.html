@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css" >
+    <link rel="stylesheet" href="/static/newuser.css">
+    <link rel="stylesheet" href="/static/users.css">
+    <link rel="stylesheet" href="/static/profile.css">
+    <link rel="stylesheet" href="/static/edit.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>{% block title %} {% endblock %}</title>
+</head> 
+<body>
+    <section id="aSection">
+        <a href="/">home</a>
+        <a href="/newuser">new user</a>
+        <a href="/users">users</a>
+
+
+    </section>
+
+    <!-- {% block header %}
+    <h1>Boggle</h1>
+    {% endblock %} -->
+
+    {% block content %}
+    <!-- The content block where child templates will inject specific content -->
+    {% endblock %}
+
+      <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    
+</body>
+
+
+</html>

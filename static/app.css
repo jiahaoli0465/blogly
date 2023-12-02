@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(111, 125, 170);
+    /* background-image: url(resources/watercolor-light-steel-blue-wallpaper-image.jpg); */
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    color: rgb(196, 224, 249);
+   
+
+
+}
+input {-webkit-appearance: none; box-shadow: none !important; }
+:-webkit-autofill { color: #fff !important; }
+
+#aSection {
+    background-color: rgb(105, 121, 170);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    margin: 0;
+    padding: 1vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+
+
+}
+
+#aSection a {
+    color: rgb(196, 224, 249);
+    margin-inline: 10px;
+
+    text-decoration: none;
+
+
+    transition: 0.3s ease-in-out;
+
+}
+
+#homeDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

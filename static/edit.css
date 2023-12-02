@@ -1,0 +1,80 @@
+#editUserDiv {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#editUserDiv h2 {
+    margin: 15px;
+    transform: translateY(-15px);
+
+    font-size: 35px;
+    text-align: center;
+}
+
+#editForm {
+    /* background-color: transparent; */
+    height: 500px;
+    width: 450px;
+    /* background: transparent; */
+    background-color: rgb(106, 120, 165, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+#editForm form{
+    width: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+
+#editForm label {
+    font-weight: bold;
+}
+
+#editForm input {
+    width: 100%; 
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+    border: 1px solid rgb(163, 172, 207);
+    border-radius: 12px;
+}
+#editForm input:focus {
+    border-color: #4a7ae2; 
+    outline: none;
+}
+
+#editForm button {
+    background-color: #6473a6; 
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    transform: translateY(10px);
+}
+
+#editForm button:hover {
+    background-color: #355bbd; 
+}

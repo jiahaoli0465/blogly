@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+user listing
+{% endblock %}
+
+{% block content %}
+<!-- content here -->
+
+
+<div id="usersDiv">
+
+    <div id="usersSection">
+        <h2>Users</h2>
+
+        <div id="users">
+            
+            <ul>
+                {% if users|length == 0 %}
+                    <li><a href="/newuser">There are no users currently, click me to make one!</a></li>
+
+                {% else %}
+                    {% for user in users %}
+                        <li><a href="users/{{ user.id }}">{{ user.get_name() }}</a></li>
+                    {% endfor %}
+                {% endif %}
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

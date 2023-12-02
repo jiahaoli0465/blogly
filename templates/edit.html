@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+edit user
+{% endblock %}
+
+{% block content %}
+<!-- content here -->
+
+
+<div id="editUserDiv">
+
+    <div id="editForm">
+        <h2>Edit {{user.get_name()}}</h2>
+
+        <form action= "/users/{{user.id}}/edit/post" method="POST">
+            <label for="firstName">First Name</label>
+            <input name="firstName" id = "firstName" type="text" placeholder="enter first name"> 
+
+            <label for="lastName">Last Name</label>
+            <input name="lastName" id="lastName" type="text" placeholder="enter last name"> 
+
+            <label for="imgurl">Image URL</label>
+            <input name="imgurl" id="imgurl" type="text" placeholder="img url for this user"> 
+
+            <button>change</button>
+           
+
+        </form>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}
