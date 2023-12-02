@@ -9,7 +9,8 @@ body {
 
     color: rgb(196, 224, 249);
    
-
+    height: 100%;
+    overflow-y: hidden;
 
 }
 input {-webkit-appearance: none; box-shadow: none !important; }
@@ -42,7 +43,7 @@ input {-webkit-appearance: none; box-shadow: none !important; }
 
 #homeDiv {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
