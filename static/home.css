@@ -1,0 +1,87 @@
+#homeDiv {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#allPosts {
+
+    height: 85vh;
+    width: 550px;
+    margin-top: 50px;
+    /* background: transparent; */
+    background-color: rgb(106, 120, 165, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: left;
+    overflow: scroll;
+    padding-bottom: 20px;
+    /* margin-bottom: 10px; */
+    /* gap: 5px; */
+}
+
+
+.homePost {
+    margin-top:10px;
+    margin-inline: 15px;
+    /* background-color: blue; */
+    background-color: rgb(105, 121, 170);
+    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+    z-index: 1000;
+    /* padding: 10px; */
+    /* padding-inline: 5px; */
+    padding-block: 10px;
+
+}
+
+.name {
+    margin: 0px;
+    margin-inline: 15px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center; /* Add this line */
+
+
+}
+.name a{
+
+    color: aquamarine;
+    font-size: 17px;
+    transition: 0.15s ease-in-out;
+    
+}
+
+.name a:hover {
+    color: rgb(127, 212, 255);
+    font-size: 16.5px;
+}
+
+.date {
+    font-size: 10px;
+}
+.content {
+    /* margin: 10px; */
+    margin: 0;
+    margin-inline: 15px;
+    margin-bottom: 7px;
+}
+.content a{
+
+
+    font-size: 20px;
+}

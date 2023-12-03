@@ -4,14 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: row;
+    margin: 20px;
 }
 
   
 
 #profileDiv h2 {
     margin: 15px;
-    /* transform: translateY(-15px); */
+
 
     font-size: 35px;
     text-align: center;
@@ -19,8 +20,8 @@
 
 #profileSection{
     /* background-color: transparent; */
-    height: 500px;
-    width: 450px;
+    height: 300px;
+    width: 250px;
     /* margin-top: 50px; */
     /* background: transparent; */
     background-color: rgb(106, 120, 165, 0.5);
@@ -35,8 +36,12 @@
     /* justify-content: center; */
     align-items: center;
     gap: 5px;
+    margin: 20px;
     /* margin: 10px; */
     
+}
+#profileSection h2{
+    font-size: 25px;
 }
 
 #userInfo {
@@ -52,6 +57,7 @@
     gap: 40px;
 
 }
+
 
 #userInfo img {
     height: 50%;
@@ -80,4 +86,75 @@
     background-color: #355bbd; 
 }
 
+
+
+#userPost {
+    height: 650px;
+    width: 450px;
+    /* margin-top: 50px; */
+    /* background: transparent; */
+    background-color: rgb(106, 120, 165, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    margin: 20px;
+    position: relative;
+}
+#userPost button{
+    position: absolute;
+    bottom: 10px;
+    background-color: #6473a6; 
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    margin-inline: 10px;
+
+}
+
+
+#userPost button:hover {
+    background-color: #355bbd; 
+}
+
+#posts{
+    width: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: scroll;
+    margin-bottom: 100px;
+
+}
+#posts ul {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+#posts li{
+    background-color: #6473a6;
+    font-size: 20px;
+    color: rgb(161, 206, 245);
+    text-decoration:none; 
+    cursor: pointer;
+    box-shadow: 0 0  8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 8px;
+    padding-inline: 15px;
+}
 

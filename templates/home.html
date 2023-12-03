@@ -8,13 +8,40 @@ Home
 <!-- content here -->
 
 <div id="homeDiv">
-    <h2>Home for testing</h2>
+    <!-- <h2>Home for testing</h2> -->
+    <div id="allPosts">
+        {% if posts|length == 0 %}
+        <li><a href="/newuser">There are no users currently, click me to make one!</a></li>
+
+        {% else %}
+            {% for post in posts %}
+
+            <div class="homePost"> 
+                <div class="name">
+                    <!-- <p id="{{post.user.id}}">{{post.user.get_name()}}</p> -->
+                    <a href="/users/{{post.user_id}}">{{post.user.get_name()}}</a>
+                    <p class="date">{{post.friendly_date}}</p>
+                </div>
+                <div class="content" id="{{post.id}}">
+                    <!-- <p>{{post.title}}</p> -->
+                    <a href="/posts/{{post.id}}">{{post.title}}</a>
+                </div>
+            </div>
+
+
+            {% endfor %}
+        {% endif %}
+
+
+
+
+
+    </div>
+
 
 
 
 </div>
-
-
 
 
 

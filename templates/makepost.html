@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+new post
+{% endblock %}
+
+{% block content %}
+<!-- content here -->
+
+
+<div id="newPostDiv">
+
+    <div id="postForm">
+        <h2>Make New Post</h2>
+
+        <form action="/users/{{user.id}}/post/new" method="POST">
+            <p>User: <b>{{user.get_name()}}</b></p>
+            <label for="title">Title</label>
+            <input name="title" id = "title" type="text" placeholder="enter title"> 
+
+            <label for="content"> Post Content</label>
+            <textarea id="content" name="content" placeholder="Enter your text here..."></textarea>
+
+
+            
+
+            <button>create</button>
+           
+
+        </form>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

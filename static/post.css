@@ -1,0 +1,77 @@
+#postDiv {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+#post h2 {
+    margin: 15px;
+    margin-top: 45px;
+    transform: translateY(-15px);
+
+    font-size: 35px;
+    text-align: center;
+}
+
+#post{
+    /* background-color: transparent; */
+    height: 700px;
+    width: 600px;
+    /* background: transparent; */
+    background-color: rgb(106, 120, 165, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 40px;
+}
+
+#postContent{
+
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
+
+    background-color: #6473a640;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+
+#post button {
+    background-color: #6473a6; 
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    transform: translateY(10px);
+    margin-inline: 10px;
+}
+
+#post button:hover {
+    background-color: #355bbd; 
+}
+
+#post p {
+    margin: 10px;
+}

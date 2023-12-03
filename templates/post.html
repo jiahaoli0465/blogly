@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+post
+{% endblock %}
+
+{% block content %}
+<!-- content here -->
+
+
+<div id="postDiv">
+
+    <div id="post">
+        <h2>{{ post.title }}</h2>
+
+        <div id="postContent">
+            <p>{{post.content}}</p>
+
+        </div>
+
+
+        <div id="btns">
+            <button onclick = "editPost('{{post.id}}')">edit</button>
+            <button onclick="deletePost('{{post.id}}', '{{post.user_id}}')">delete</button>
+            <script>
+
+                function editPost(id) {
+                   window.location.href = `/posts/${id}/edit`
+                }
+
+
+                function deletePost(id, uid) {
+                    if (confirm("Are you sure you want to delete this post?")) {
+                        axios.post(`/posts/${id}/delete`)
+                            .then(function (response) {
+
+                                console.log(response);
+                                window.location.href = `/users/${uid}`; 
+                            })
+                            .catch(function (error) {
+
+                                console.error('Error:', error);
+                            });
+                    }
+                }
+            </script>
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

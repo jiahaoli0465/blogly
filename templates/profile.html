@@ -44,8 +44,43 @@ profile
             </script>
         </div>
 
+
+
     </div>
 
+
+    <div id="userPost">
+        <h2>Posts</h2>
+
+        <div id="posts">
+            <ul>
+                {% if user.posts|length == 0 %}
+                    <li>This user has no posts.</li>
+
+                {% else %}
+                    {% for post in user.posts %}
+                        <li onclick="toPost('{{post.id}}')"> <a href="/posts/{{post.id}}">{{ post.title }}</a></li>
+                    {% endfor %}
+                {% endif %}
+
+
+
+            </ul>
+        </div>
+
+        <button onclick="post('{{user.id}}')" >make post</button>
+        <script>
+            function toPost(id){
+                window.location.href = `/posts/${id}`
+
+            }
+
+
+            function post(uid) {
+                window.location.href = '/users/' + uid + '/post'
+            }
+        </script>
+    </div>
 
 
 </div>

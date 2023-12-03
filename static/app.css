@@ -41,12 +41,5 @@ input {-webkit-appearance: none; box-shadow: none !important; }
 
 }
 
-#homeDiv {
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
