@@ -13,7 +13,7 @@ edit user
     <div id="editForm">
         <h2>Edit {{user.get_name()}}</h2>
 
-        <form action= "/users/{{user.id}}/edit/post" method="POST">
+        <form autocomplete="off" action= "/users/{{user.id}}/edit/post" method="POST">
             <label for="firstName">First Name</label>
             <input name="firstName" id = "firstName" type="text" placeholder="enter first name"> 
 

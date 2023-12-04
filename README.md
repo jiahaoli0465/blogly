@@ -10,7 +10,7 @@ Flask Blogly is a personal web development project that showcases a full-stack b
 - **Blog Post Management**: Enables users to write, display, and manage blog posts, showcasing the ability to handle dynamic content and database operations.
 - **Flask & PostgreSQL Integration**: The application leverages Flask for backend logic and PostgreSQL for data storage, reflecting expertise in key web development technologies.
 - **Clean and Responsive UI Design**: The interface is designed to be straightforward and responsive, focusing on user experience and ease of interaction.
-- **Efficient Code Structure**: Emphasis on writing clean, structured, and well-documented code, adhering to best practices in software development.
+- **Efficient Code Structure**: Emphasis on writing clean, structured code, adhering to best practices in software development.
 
 This project is a practical example of creating a user-friendly web application from the ground up, highlighting skills in both frontend design and backend development.
 

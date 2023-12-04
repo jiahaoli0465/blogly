@@ -13,7 +13,7 @@ new post
     <div id="postForm">
         <h2>Make New Post</h2>
 
-        <form action="/users/{{user.id}}/post/new" method="POST">
+        <form autocomplete="off" action="/users/{{user.id}}/post/new" method="POST">
             <p>User: <b>{{user.get_name()}}</b></p>
             <label for="title">Title</label>
             <input name="title" id = "title" type="text" placeholder="enter title"> 

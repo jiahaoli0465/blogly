@@ -13,7 +13,7 @@ edit post
     <div id="editForm">
         <h2>Edit Post</h2>
 
-        <form action="/posts/{{post.id}}/edit/post" method="POST">
+        <form autocomplete="off" action="/posts/{{post.id}}/edit/post" method="POST">
             <p>Post title: <b>{{post.title}}</b></p>
             <label for="title">Edit Title</label>
             <input name="title" id = "title" type="text" placeholder="enter title"> 
