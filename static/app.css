@@ -21,7 +21,7 @@ input {-webkit-appearance: none; box-shadow: none !important; }
     display: flex;
     justify-content: right;
     align-items: center;
-
+    position: relative;
     margin: 0;
     padding: 1vh;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -29,6 +29,8 @@ input {-webkit-appearance: none; box-shadow: none !important; }
 
 
 }
+
+
 
 #aSection a {
     color: rgb(196, 224, 249);
@@ -42,4 +44,11 @@ input {-webkit-appearance: none; box-shadow: none !important; }
 }
 
 
+#aSection #logo {
+
+    position: absolute;
+    left: 10px;
+    color: aquamarine;
+
+}
 
