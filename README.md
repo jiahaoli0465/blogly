@@ -4,6 +4,13 @@
 
 Flask Blogly is a personal web development project that showcases a full-stack blogging platform, intricately crafted using Python's Flask framework and a PostgreSQL database. This project exemplifies my proficiency in developing and integrating both frontend and backend components of a web application.
 
+
+## User Experience
+Here's a video demonstrating how an user might use it.
+
+https://github.com/jiahaoli0465/blogly/assets/144624616/952bacb7-004c-4c61-97ac-2ed2a52e8211
+
+
 ## Key Features
 
 - **User Profile Creation**: Simple yet effective system allowing users to create and display profiles, demonstrating user interface design and database management skills.
