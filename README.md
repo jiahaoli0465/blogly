@@ -6,9 +6,12 @@ Flask Blogly is a personal web development project that showcases a full-stack b
 
 
 ## User Experience
-Here's a video demonstrating how an user might use it.
+Here's a video demonstrating some of the features...
 
-https://github.com/jiahaoli0465/blogly/assets/144624616/952bacb7-004c-4c61-97ac-2ed2a52e8211
+
+
+https://github.com/jiahaoli0465/blogly/assets/144624616/e0e4964f-d927-4ada-9c73-2e21c59597c0
+
 
 
 ## Key Features
