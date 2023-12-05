@@ -18,7 +18,7 @@ https://github.com/jiahaoli0465/blogly/assets/144624616/e0e4964f-d927-4ada-9c73-
 
 - **User Profile Creation**: Simple yet effective system allowing users to create and display profiles, demonstrating user interface design and database management skills.
 - **Blog Post Management**: Enables users to write, display, and manage blog posts, showcasing the ability to handle dynamic content and database operations.
-- **Tags Management**: Enables users to create tags, add tags to posts, and edit tags on posts. This shows my ability to user many to many relationships within SQL.
+- **Tags Management**: Enables users to create tags, add tags to posts, and edit tags on posts. This shows my ability to use many to many relationships within SQL.
 
 - **Flask & PostgreSQL Integration**: The application leverages Flask for backend logic and PostgreSQL for data storage, reflecting expertise in key web development technologies.
 - **Clean and Responsive UI Design**: The interface is designed to be straightforward and responsive, focusing on user experience and ease of interaction.
