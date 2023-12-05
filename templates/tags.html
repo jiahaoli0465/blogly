@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}
+all tags
+{% endblock %}
+
+{% block content %}
+<!-- content here -->
+
+<link rel="stylesheet" href="/static/tags.css">
+<div id="tagsDiv">
+
+    <div id="tagsSection">
+        <h2>All tags</h2>
+
+        <div id="tags">
+            
+            <ul>
+
+
+                {% if tags|length == 0 %}
+                    <li><a href="/tags/new">There are no tags currently, click me to make one!</a></li>
+
+                {% else %}
+                    {% for tag in tags %}
+                        <li><a href="/tags/{{tag.id}}">{{tag.name}}</a></li>
+                    {% endfor %}
+                {% endif %}
+
+
+            </ul>
+
+        </div>
+        <button onclick="createTag()">New tag</button>
+        <script>
+            function createTag() {
+                window.location.href = 'tags/new'
+            }
+        </script>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

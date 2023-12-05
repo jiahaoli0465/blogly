@@ -8,13 +8,30 @@ new post
 <!-- content here -->
 
 
+
 <div id="newPostDiv">
 
     <div id="postForm">
         <h2>Make New Post</h2>
 
-        <form autocomplete="off" action="/users/{{user.id}}/post/new" method="POST">
+        <form id="formEl" autocomplete="off" action="/users/{{user.id}}/post/new" method="POST">
             <p>User: <b>{{user.get_name()}}</b></p>
+            <button type="button" id="toggleTagsButton">Tags</button>
+            <div class="tagSelector hidden">
+                {% for tag in tags %}
+                <div class="tagWhole">
+                  <input class="tagCheckBox"
+                         type="checkbox"
+                         value="{{ tag.id }}"
+                         id="tag_{{ tag.id }}"
+                         name="tags">
+                  <label class="tagLabel" for="tag_{{ tag.id }}">
+                    {{ tag.name }}
+                  </label>
+                </div>
+                {% endfor %}
+              </div>
+
             <label for="title">Title</label>
             <input name="title" id = "title" type="text" placeholder="enter title"> 
 
@@ -34,6 +51,12 @@ new post
 
 
 </div>
+<script>
+    document.getElementById('toggleTagsButton').addEventListener('click', function() {
+        var tagSelector = document.querySelector('.tagSelector');
+        tagSelector.classList.toggle('hidden');
+    });
+</script>
 
 
 

@@ -15,16 +15,35 @@ edit post
 
         <form autocomplete="off" action="/posts/{{post.id}}/edit/post" method="POST">
             <p>Post title: <b>{{post.title}}</b></p>
-            <label for="title">Edit Title</label>
-            <input name="title" id = "title" type="text" placeholder="enter title"> 
 
-            <label for="content"> Edit Content</label>
-            <textarea id="content" name="content" placeholder="Enter your text here..."></textarea>
+            <button type="button" id="toggleTagsButton">Tags</button>
+            <div class="tagSelector hidden">
+                {% for tag in tags %}
+                <div class="tagWhole">
+                  <input class="tagCheckBox"
+                         type="checkbox"
+                         value="{{ tag.id }}"
+                         id="tag_{{ tag.id }}"
+                         name="tags"
+                         {% if tag in post.tags %}checked{% endif %}>
+                  <label class="tagLabel" for="tag_{{ tag.id }}">
+                    {{ tag.name }}
+                  </label>
+                </div>
+                {% endfor %}
+              </div>
 
+            <div id="formEl">
+                <label for="title">Edit Title</label>
+                <input name="title" id = "title" type="text" placeholder="enter title"> 
+
+                <label for="content"> Edit Content</label>
+                <textarea id="content" name="content" placeholder="Enter your text here..."></textarea>
+            </div>
 
             
 
-            <button>change</button>
+            <button id="changeBtn">change</button>
            
 
         </form>
@@ -37,7 +56,12 @@ edit post
 
 
 
-
+<script>
+    document.getElementById('toggleTagsButton').addEventListener('click', function() {
+        var tagSelector = document.querySelector('.tagSelector');
+        tagSelector.classList.toggle('hidden');
+    });
+</script>
 
 
 

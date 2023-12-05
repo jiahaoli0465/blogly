@@ -12,6 +12,17 @@ post
 
     <div id="post">
         <h2>{{ post.title }}</h2>
+        <div id="info">
+            <p >author: <b id="author">{{ post.user.get_name() }}</b></p>
+            <p>tags: 
+                {% for tag in post.tags %}
+                    <span id="tagBlock">
+                        <b>{{tag.name}}</b>
+                    </span>
+                {% endfor %}
+            </p>
+
+        </div>
 
         <div id="postContent">
             <p>{{post.content}}</p>

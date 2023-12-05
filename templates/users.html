@@ -16,9 +16,10 @@ user listing
         <div id="users">
             
             <ul>
+
                 {% if users|length == 0 %}
                     <li><a href="/newuser">There are no users currently, click me to make one!</a></li>
-
+                    
                 {% else %}
                     {% for user in users %}
                         <li><a href="users/{{ user.id }}">{{ user.get_name() }}</a></li>

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+edit tag
+{% endblock %}
+
+{% block content %}
+<!-- content here -->
+
+<link rel="stylesheet" href="/static/newTag.css">
+<div id="newTagDiv">
+
+    <div id="newTag">
+        <h2>New tag</h2>
+
+        <form autocomplete="off" action= "/tags/new/post" method="POST">
+            <label for="tagName">Tag name</label>
+            <input name="tagName" id = "tagName" type="text" placeholder="enter tag name"> 
+            <button>create</button>
+
+
+        </form>
+        
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

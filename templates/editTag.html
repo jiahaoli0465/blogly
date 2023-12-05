@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}
+edit tag
+{% endblock %}
+
+{% block content %}
+<!-- content here -->
+
+<link rel="stylesheet" href="/static/editTag.css">
+<div id="editTagDiv">
+
+    <div id="editTag">
+        <h2>Edit {{tag.name}}</h2>
+
+        <form autocomplete="off" action= "{{tag.id}}/post" method="POST">
+            <label for="tagName">Tag name</label>
+            <input name="tagName" id = "tagName" type="text" placeholder="change tag name"> 
+
+            <div id="btnsTag">
+                <button>change</button>
+                <button id="deleteBtn" data-tid="{{tag.id}}">delete</button>
+                <script>
+                    const dtn = document.querySelector('#deleteBtn');
+                    const tid = dtn.getAttribute('data-tid');
+                    dtn.addEventListener('click', function(e){
+                        e.preventDefault();
+                        removeTag(tid);
+                    })
+                
+                    function removeTag(id) {
+                        if (confirm("Are you sure you want to delete this tag?")) {
+                            axios.post('/tags/' + id + '/delete')
+
+                                .then(function (response) {
+                                    console.log(response);
+                                    window.location.href = "/tags"; // Redirect or update UI as needed
+                                })
+                                .catch(function (error) {
+                                    console.error('Error:', error);
+                                });
+                        }
+                    }
+                </script>
+            </div>
+        </form>
+        
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

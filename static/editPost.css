@@ -29,6 +29,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
+    position: relative;
     
 }
 
@@ -42,11 +43,11 @@
 
 }
 
-#editForm label {
+#editForm #formEl label {
     font-weight: bold;
 }
 
-#editForm input {
+#editForm #formEl input {
     width: 100%; 
     padding: 10px;
     margin: 8px 0;
@@ -92,4 +93,88 @@
 
 #editForm button:hover {
     background-color: #355bbd; 
+}
+
+
+.tagSelector {
+
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 150px;
+    background-color: #6473a6;
+    padding: 15px;
+    width: 180px;
+    height: 240px;
+    border-radius: 10px;
+    overflow: scroll;
+
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(93, 105, 152);
+
+
+}
+
+.tagCheckBox {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin-right: 5px;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(163, 172, 207);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Style for when the checkbox is checked */
+.tagCheckBox:checked {
+    background-color: #80daec;
+    border-color: #6473a6;
+}
+
+/* Checkmark style */
+.tagCheckBox:checked:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+
+
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Hover effect */
+.tagCheckBox:hover {
+    background-color: rgb(142, 247, 237);
+}
+
+
+.tagWhole {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#editForm #toggleTagsButton {
+    width: 70px;
+    transform: translateY(0);
+
+}
+
+.tagLabel {
+    margin-left: 5px;
 }

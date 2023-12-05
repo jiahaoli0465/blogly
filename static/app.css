@@ -13,8 +13,11 @@ body {
     overflow-y: hidden;
 
 }
-input {-webkit-appearance: none; box-shadow: none !important; }
-:-webkit-autofill { color: #fff !important; }
+input[type="text"], input[type="password"], input[type="email"] {
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
 
 #aSection {
     background-color: rgb(105, 121, 170);

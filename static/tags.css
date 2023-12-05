@@ -1,43 +1,26 @@
-#postDiv {
+#tagsDiv {
     width: 100vw;
     height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 20px;
+    /* align-items: center; */
 
 }
-#post h2 {
+
+
+#tagsDiv h2 {
     margin: 15px;
-    margin-top: 45px;
-    transform: translateY(-15px);
+    /* transform: translateY(-15px); */
 
     font-size: 35px;
     text-align: center;
 }
 
-#post #author {
-    /* justify-self: left; */
-    color: aquamarine;
-
-}
-
-#tagBlock {
-    background-color: #a66764;
-    margin-right: 8px;
-
-
-    padding: 2px;
-    padding-inline: 6px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-    /* width: 30px; */
-}
-#post{
+#tagsSection{
     /* background-color: transparent; */
-    height: 700px;
-    width: 600px;
+    height: 85vh;
+    width: 450px;
+    margin-top: 50px;
     /* background: transparent; */
     background-color: rgb(106, 120, 165, 0.5);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -50,51 +33,54 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    margin: 10px;
-    padding-bottom: 40px;
+    gap: 5px;
+    /* margin: 10px; */
+    position: relative;
+
+    
 }
 
-#post #info {
-    align-self: flex-start;
-    margin-left: 50px;
-}
-
-#postContent{
-
+#tags{
     width: 80%;
-    height: 80%;
     margin: 15px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
-
-    background-color: #6473a640;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-
-
+    overflow: scroll;
+    margin-bottom: 80px;
+}
+#tags ul {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+#tags li, a {
+    font-size: 20px;
+    color: rgb(161, 245, 230);
+    text-decoration:none; 
+    cursor: pointer;
 }
 
-
-
-#post button {
+#tagsSection button{
     background-color: #6473a6; 
     color: white;
     padding: 12px 20px;
     margin: 8px 0;
+    margin-bottom: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
-    transform: translateY(10px);
-    margin-inline: 10px;
+    position: absolute;
+    bottom: 15px;
+    
 }
 
-#post button:hover {
+
+
+#tagsSection button:hover {
     background-color: #355bbd; 
-}
-
-#post p {
-    margin: 10px;
 }
