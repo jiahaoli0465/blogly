@@ -10,7 +10,11 @@ Here's a video demonstrating some of the features...
 
 
 
-https://drive.google.com/file/d/1acTn3QbZTRJtM1hPefLbKYDPw3Cq0Qqj
+
+
+https://github.com/jiahaoli0465/blogly/assets/144624616/92e8bae2-2a7a-4a80-9a0b-f86bd36eea34
+
+
 
 
 ## Key Features
