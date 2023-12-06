@@ -6,15 +6,20 @@ Flask Blogly is a personal web development project that showcases a full-stack b
 
 
 ## User Experience
-Here's a video demonstrating how an user might use it.
+Here's a video demonstrating some of the features...
 
-https://github.com/jiahaoli0465/blogly/assets/144624616/952bacb7-004c-4c61-97ac-2ed2a52e8211
+
+
+https://github.com/jiahaoli0465/blogly/assets/144624616/e0e4964f-d927-4ada-9c73-2e21c59597c0
+
 
 
 ## Key Features
 
 - **User Profile Creation**: Simple yet effective system allowing users to create and display profiles, demonstrating user interface design and database management skills.
 - **Blog Post Management**: Enables users to write, display, and manage blog posts, showcasing the ability to handle dynamic content and database operations.
+- **Tags Management**: Enables users to create tags, add tags to posts, and edit tags on posts. This shows my ability to use many to many relationships within SQL.
+
 - **Flask & PostgreSQL Integration**: The application leverages Flask for backend logic and PostgreSQL for data storage, reflecting expertise in key web development technologies.
 - **Clean and Responsive UI Design**: The interface is designed to be straightforward and responsive, focusing on user experience and ease of interaction.
 - **Efficient Code Structure**: Emphasis on writing clean, structured code, adhering to best practices in software development.
