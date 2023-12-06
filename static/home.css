@@ -16,7 +16,7 @@
     background-color: rgb(106, 120, 165, 0.5);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 
-    border: 1.5px solid rgba(227, 227, 227, 0.1) ;
+    border: 10px solid rgba(227, 227, 227, 0.1) ;
     backdrop-filter: blur(20px);
     border-radius: 20px;
 
@@ -24,11 +24,16 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: left;
-    overflow: scroll;
-    padding-bottom: 20px;
-    /* margin-bottom: 10px; */
+    overflow: auto;
+    /* margin-bottom: 30px; */
     /* gap: 5px; */
 }
+@media (max-width: 768px) {
+    #allPosts{
+        transform: scale(0.85);
+        height: 100vh;
+    }
+  }
 
 
 .homePost {
@@ -42,9 +47,9 @@
     border-radius: 10px;
     z-index: 1000;
     /* padding: 10px; */
-    /* padding-inline: 5px; */
+    /* padding-inline: 2px; */
     padding-block: 10px;
-
+    
 }
 
 .name {

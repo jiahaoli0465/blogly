@@ -61,7 +61,14 @@ ul {
 }
 #users li, a {
     font-size: 20px;
-    color: rgb(161, 206, 245);
+    color: rgb(161, 245, 223);
     text-decoration:none; 
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+#users a:hover {
+    color: rgb(161, 203, 245);
+
 }

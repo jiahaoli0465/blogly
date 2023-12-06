@@ -61,8 +61,15 @@
     color: rgb(161, 245, 230);
     text-decoration:none; 
     cursor: pointer;
+
+    transition: 0.2s ease-in-out;
 }
 
+
+#tags a:hover {
+    color: rgb(161, 203, 245);
+
+}
 #tagsSection button{
     background-color: #6473a6; 
     color: white;

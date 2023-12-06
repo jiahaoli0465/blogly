@@ -1,6 +1,11 @@
 body {
+    background-image: url('watercolor-light-steel-blue-wallpaper-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-color: rgb(111, 125, 170);
-    /* background-image: url(resources/watercolor-light-steel-blue-wallpaper-image.jpg); */
+
     font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
@@ -8,11 +13,17 @@ body {
     flex-direction: column;
 
     color: rgb(196, 224, 249);
-   
+    z-index: 1000;
     height: 100%;
     overflow-y: hidden;
-
+    cursor: none;
 }
+
+* {
+    cursor: none !important;
+}
+
+   
 input[type="text"], input[type="password"], input[type="email"] {
     -webkit-appearance: none;
     box-shadow: none !important;
@@ -27,7 +38,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     position: relative;
     margin: 0;
     padding: 1vh;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     z-index: 10000;
 
 
@@ -36,6 +47,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 
 
 #aSection a {
+    font-size: 18px;
     color: rgb(196, 224, 249);
     margin-inline: 10px;
 
@@ -43,6 +55,13 @@ input[type="text"], input[type="password"], input[type="email"] {
 
 
     transition: 0.3s ease-in-out;
+
+    transition: 0.2s ease-in-out;
+}
+
+
+#aSection a:hover {
+    color: rgb(161, 203, 245);
 
 }
 

@@ -1,0 +1,43 @@
+.cursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 100000000;
+
+}
+
+.cursor__inner {
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.cursor__inner--circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(183, 183, 183); 
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.cursor__inner--dot {
+    width: 5px;
+    height: 5px;
+    background-color: #fff; 
+    border: 1px solid black;
+}
+
+.cursor__inner--expanded {
+
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    border: 1.5px solid #9ff0fc; 
+    transition: transform 0.4s ease-in-out; 
+
+}
+
+.cursor__inner--circle, .cursor__inner--dot {
+
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out, border 0.4s ease-in-out;
+}
