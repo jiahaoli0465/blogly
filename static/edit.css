@@ -56,6 +56,8 @@
 
     border: 1px solid rgb(163, 172, 207);
     border-radius: 12px;
+    cursor: pointer;
+
 }
 #editForm input:focus {
     border-color: #4a7ae2; 
@@ -69,10 +71,10 @@
     margin: 8px 0;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
     transform: translateY(10px);
+    cursor: pointer;
 }
 
 #editForm button:hover {
