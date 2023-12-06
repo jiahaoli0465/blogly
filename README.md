@@ -10,8 +10,7 @@ Here's a video demonstrating some of the features...
 
 
 
-https://github.com/jiahaoli0465/blogly/assets/144624616/e0e4964f-d927-4ada-9c73-2e21c59597c0
-
+https://drive.google.com/file/d/1acTn3QbZTRJtM1hPefLbKYDPw3Cq0Qqj
 
 
 ## Key Features
