@@ -10,7 +10,11 @@ Here's a video demonstrating some of the features...
 
 
 
-Uploading 616EB0A1-6316-4C83-A70C-AF134C42DAA6 2.mp4…
+
+
+
+https://github.com/jiahaoli0465/blogly/assets/144624616/2082edcc-ba17-4069-9eea-ca1f2a6e7840
+
 
 
 
